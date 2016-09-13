@@ -32,4 +32,4 @@ Because Adam Silver, host of the Kitchen Sink WP podcast, jokingly asked for it 
 
 ## Changelog
 ###1.0.0
-* New: Plug created. No further changes anticipated -- it does what it does, what more is there to do?
+* New: Plugin created. No further changes anticipated -- it does what it does, what more is there to do?
