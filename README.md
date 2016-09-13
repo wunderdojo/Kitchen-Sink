@@ -2,16 +2,22 @@
 
 Restores the "kitchen sink" label in the WordPress TinyMCE toolbar. Inspired by @kitchensinkwp
 
-== Description ==
+## Description
 
 Restore's the "kitchen sink" label to the TinyMCE toolbar in WordPress. Inspired by @kitchensinkwp. 
 
 
 
-= Plugin Features =
+## Plugin Features
 
 None. Literally. All it does it restore the label "kitchen sink" when you hover over the toobar toggle button in TinyMCE.
 
+## Screenshots
+Here it is in all its glory. You can even translater "Kitchen Sink" to your favorite language!
+
+![alt text](https://github.com/wunderdojo/kitchensink/blob/master/assets/toolbar-english.png)
+
+![alt text](https://github.com/wunderdojo/kitchensink/blob/master/assets/toolbar-spanish.png)
 
 
 ## Installation
