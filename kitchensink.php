@@ -4,10 +4,10 @@
   Plugin Name: Kitchen Sink
   Version: 1.0.0
   Plugin URI: http://wunderdojo.com/plugins/kitchensink
-  Description: Restores the "kitchen sink" label in TinyMCE. Inspired by @kitchensinkwp
+  Description: Restores the kitchen sink label in TinyMCE. Inspired by @kitchensinkwp
   Author: James Currie
   Author URI: http://www.wunderdojo.com
-  Text-Domain: dojo-ks
+  Text-Domain: kitchensink
   Domain Path: /languages
 
 ------------------------------------------------------------------------
@@ -34,17 +34,28 @@ if ( ! class_exists( 'Kitchen_Sink' ) ) {
 	
 	public function __construct(){
 	    
-	    add_action( 'admin_init', array( __CLASS__, 'init_localization' ) );   
+	    add_action( 'plugins_loaded', array( __CLASS__, 'init_localization' ) );  
+	    
+	    add_filter( 'wp_mce_translation', array( __CLASS__, 'custom_tooltips' ), 10, 1 );
 	    
 	}
 	
 	
 	static public function init_localization() {
-	    
-	    $loaded = load_plugin_textdomain( 'dojo-ks', false, basename( dirname( __FILE__ ) ) . '/languages/' );
+
+	    load_plugin_textdomain( 'kitchensink', false, basename( dirname( __FILE__ ) ) . '/languages/' );
 
         }
+	
+	public function custom_tooltips( $mce_translation ){
+
+	    $mce_translation['Toolbar Toggle'] = __( 'Kitchen Sink', 'kitchensink' );
+	    
+	    return $mce_translation;
+	}
         
     }
+    
+   $kitchen_sink = new Kitchen_Sink;
     
 }
