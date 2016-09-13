@@ -1,9 +1,5 @@
 #KitchenSink
 
-Restores the "kitchen sink" label in the WordPress TinyMCE toolbar. Inspired by @kitchensinkwp
-
-## Description
-
 Restore's the "kitchen sink" label to the TinyMCE toolbar in WordPress. Inspired by @kitchensinkwp. 
 
 
@@ -17,7 +13,7 @@ Here it is in all its glory.
 
 ![alt text](https://github.com/wunderdojo/kitchensink/blob/master/assets/toolbar-english.png)
 
-You can even translater "Kitchen Sink" to your favorite language!
+You can even translate "Kitchen Sink" to your favorite language! (Or at least let Google take a crack at it.)
 
 ![alt text](https://github.com/wunderdojo/kitchensink/blob/master/assets/toolbar-spanish.png)
 
